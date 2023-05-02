@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% comment %} <link rel="stylesheet" href="{{ static / home.css }}"> {% endcomment %}
+        <title>Password Generator</title>
+
+    </head>
+    <body>
+
+        <p>Wellcome to password generator app</p>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+            {% if result %}
+                <p>{{ result }}</p>
+            {% endif %}
+        </form>
+
+    </body>
+
+    <footer>
+
+        tools [python, django, html, css]
+
+        Developed by Maamoun Haj Najeeb, 
+        Social Media [Github, Linked, Youtube, Face]
+
+    </footer>
+</html>
