@@ -6,31 +6,72 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% comment %} <link rel="stylesheet" href="{{ static / home.css }}"> {% endcomment %}
+        <link rel="stylesheet" href="{% static 'generator_app/home.css' %}">
+
         <title>Password Generator</title>
 
     </head>
     <body>
 
-        <p>Wellcome to password generator app</p>
+        <div class="container">
+            <div class="start">
+                <div></div>
+                <div class="wellcome">Password Generator</div>
+                <div></div>
+            </div>
 
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <input type="submit" value="Submit">
-            {% if result %}
-                <p>{{ result }}</p>
-            {% endif %}
-        </form>
+            <div class="center">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                        <input class="input" type="submit" value="Generate">
+                        <br />
+                        <br />
+                        {% if result %}
+                            <div>Your Password</div>
+                            <div class="res-head">
+                                <div></div>
+                                <div class="result" >{{ result }}</div>
+                                <div></div>
+                            </div>
+                        {% endif %}
+                </form>
+            </div>
+
+            <div class="footer">
+                <div class="first-footer">
+                    <p>Technologies:</p>
+
+                    <p class="Backend">
+                        <div>Backend:</div>
+                        <br />
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
+                        </div>
+                    </p>
+
+                    <p class="frontend">
+                        <div>Frontend:</div>
+                        <br />
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+                        </div>
+                    </p>
+                </div>
+                <div class="second-footer">
+                    Developed by <i>Maamoun Haj Najeeb</i>,
+                    Social Media:
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-plain.svg" />                    
+                </div>
+            </div>
+
+        </div>
 
     </body>
 
-    <footer>
 
-        tools [python, django, html, css]
-
-        Developed by Maamoun Haj Najeeb, 
-        Social Media [Github, Linked, Youtube, Face]
-
-    </footer>
 </html>

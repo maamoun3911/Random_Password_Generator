@@ -1,0 +1,68 @@
+body {
+    background-color: #88d21e80;
+}
+.header, .main, .footer {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+.start, .center, .end {
+    text-align: center;
+}
+
+.start {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.center {
+    height: 20%;
+}
+
+.footer {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+.wellcome {
+    display: block;
+    background-color: #98dfcab3;
+    font-family: "Segoe Print";
+    color: #53148f;
+}
+
+.Backend, .frontend{
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    color: #5e11a5;
+}
+
+.result {
+    background-color: #00800054;
+}
+
+.res-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -12,5 +12,4 @@ def home(request):
             choice, length = form.cleaned_data['social_choice'], form.cleaned_data['pass_length']
             result = pass_gen(length, choice)
             context['result'] = result
-            # return HttpResponse(result)
     return render(request, "home.html", context)
