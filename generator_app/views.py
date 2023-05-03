@@ -3,7 +3,6 @@ from django.http import HttpResponse
 from .forms import PassForm
 from generator_app.utils import pass_gen
 
-
 # Create your views here.
 def home(request):
     form = PassForm(request.POST or None)
