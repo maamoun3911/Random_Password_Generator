@@ -20,7 +20,7 @@
                 <div></div>
             </div>
 
-            <div class="center">
+            {% comment %} <div class="center"> {% endcomment %}
                 <form method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
