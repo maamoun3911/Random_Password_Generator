@@ -24,17 +24,17 @@
                 <form method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
-                        <input class="input" type="submit" value="Generate">
-                        <br />
-                        <br />
-                        {% if result %}
-                            <div>Your Password</div>
-                            <div class="res-head">
-                                <div></div>
-                                <div class="result" >{{ result }}</div>
-                                <div></div>
-                            </div>
-                        {% endif %}
+                    <input class="input" type="submit" value="Generate">
+                    <br />
+                    <br />
+                    {% if result %}
+                        <div>Your Password</div>
+                        <div class="res-head">
+                            <div></div>
+                            <div class="result" >{{ result }}</div>
+                            <div></div>
+                        </div>
+                    {% endif %}
                 </form>
             </div>
 
@@ -72,6 +72,5 @@
         </div>
 
     </body>
-
 
 </html>
