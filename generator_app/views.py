@@ -8,8 +8,9 @@ def home(request):
     form = PassForm(request.POST or None)
     context = {"form": form}
     if request.method == "POST":
+        form.to = ""
         if form.is_valid():
-            choice, length = form.cleaned_data['social_choice'], form.cleaned_data['pass_length']
+            choice, length = form.cleaned_data['to'], form.cleaned_data['length']
             result = pass_gen(length, choice)
             context['result'] = result
     return render(request, "home.html", context)

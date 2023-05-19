@@ -1,0 +1,44 @@
+body {
+    background-color: #88d21e80;
+}
+
+.main div {
+    margin-top: 3%;
+}
+
+.first-branch, .second-branch,
+.third-branch, .fourth-branch,
+.fifth-branch {
+    display: grid;
+    justify-content: center;
+}
+
+.forma {
+    display: grid;
+}
+
+.tit {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #4ce3b2;
+    padding: 5px;
+    color: black;
+}
+
+.field {
+    display: grid;
+    margin-bottom: 4%;
+}
+
+.result {
+    background-color: #69af4c;
+    padding: 5px;
+}
+
+.pass {
+    background-color: #CDDC39;
+}
+
+.third-branch {
+    text-align: center;
+}
