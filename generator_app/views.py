@@ -10,7 +10,7 @@ def home(request):
     if request.method == "POST":
         form.to = ""
         if form.is_valid():
-            choice, length = form.cleaned_data['to'], form.cleaned_data['length']
-            result = pass_gen(length, choice)
+            length = form.cleaned_data['length']
+            result = pass_gen(length)
             context['result'] = result
     return render(request, "home.html", context)
