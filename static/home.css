@@ -42,3 +42,34 @@ body {
 .third-branch {
     text-align: center;
 }
+
+i {
+    color: #00add4;
+}
+
+svg {
+    height: 30px; width: 30px;
+}
+
+.social-media-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.backend, .frontend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.core-backend, .core-front {
+    display: flex;
+    justify-content: center;
+}
+
+.github-link {
+    text-decoration-line: none;
+    color: #894f81;
+}

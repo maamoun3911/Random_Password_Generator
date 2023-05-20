@@ -6,16 +6,93 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'home.css' %}">
+        {% comment %} <link rel="stylesheet" href="{% static 'home.css' %}"> {% endcomment %}
 
-        {% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
-        crossorigin="anonymous"> {% endcomment %}
+        crossorigin="anonymous">
 
         <title>Password Generator</title>
 
     </head>
     <body>
+        <style>
+            body {
+                background-color: #88d21e80;
+            }
+            
+            .main div {
+                margin-top: 3%;
+            }
+            
+            .first-branch, .second-branch,
+            .third-branch, .fourth-branch,
+            .fifth-branch {
+                display: grid;
+                justify-content: center;
+            }
+            
+            .forma {
+                display: grid;
+            }
+            
+            .tit {
+                font-size: 20px;
+                font-family:'Courier New', Courier, monospace;
+                background-color: #4ce3b2;
+                padding: 5px;
+                color: black;
+            }
+            
+            .field {
+                display: grid;
+                margin-bottom: 4%;
+            }
+            
+            .result {
+                background-color: #69af4c;
+                padding: 5px;
+            }
+            
+            .pass {
+                background-color: #CDDC39;
+            }
+            
+            .third-branch {
+                text-align: center;
+            }
+            
+            i {
+                color: #00add4;
+            }
+            
+            svg {
+                height: 30px; width: 30px;
+            }
+            
+            .social-media-bar {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            .backend, .frontend {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .core-backend, .core-front {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .github-link {
+                text-decoration-line: none;
+                color: #894f81;
+            }
+        </style>
         <div class="main">
 
             <div class="first-branch">
@@ -139,9 +216,9 @@
 
         </div>
 
-        {% comment %} <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
-        crossorigin="anonymous"></script> {% endcomment %}
+        crossorigin="anonymous"></script>
 
     </body>
 
